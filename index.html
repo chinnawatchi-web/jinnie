@@ -1,23 +1,695 @@
 <!doctype html>
 <html lang="th">
-<head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="แฟ้มสะสมผลงานของพิมพ์ชนก นักเรียนผู้ชอบเปลี่ยนไอเดียให้เป็นผลงานที่มีความหมาย">
-<title>JINNIE / แฟ้มสะสมผลงาน</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root{--ink:#152a32;--muted:#65767a;--paper:#f8f4eb;--white:#fffdf8;--coral:#e9674f;--teal:#157b78;--yellow:#f2c75b;--line:#d9e1da;--shadow:0 18px 55px #152a321f}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--paper);font-family:'Noto Sans Thai',sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.nav{align-items:center;display:flex;justify-content:space-between;padding:23px 0}.brand{align-items:center;display:flex;gap:10px;font:700 21px 'DM Sans',sans-serif;letter-spacing:.5px}.brand-mark{background:var(--coral);border-radius:50%;display:grid;height:30px;place-items:center;width:30px;color:#fff}.nav-links{align-items:center;display:flex;gap:31px;font-size:14px}.nav-links a{color:var(--muted);font-weight:600}.nav-links a:hover{color:var(--coral)}.nav-cta{background:var(--ink);border-radius:999px;color:#fff!important;padding:10px 18px}
-.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:65px;align-items:center;min-height:610px;padding:45px 0 78px}.eyebrow{align-items:center;color:var(--teal);display:flex;font-size:13px;font-weight:800;gap:10px;letter-spacing:1.2px;text-transform:uppercase}.eyebrow:before{background:var(--coral);content:'';height:8px;transform:rotate(45deg);width:8px}h1{font-size:clamp(42px,6vw,78px);letter-spacing:-2px;line-height:1.05;margin:20px 0}h1 em{color:var(--coral);font-style:normal}.hero-copy{color:var(--muted);font-size:17px;line-height:1.85;max-width:490px}.hero-actions{align-items:center;display:flex;gap:18px;margin-top:30px}.button{align-items:center;border:0;border-radius:999px;cursor:pointer;display:inline-flex;font-weight:700;gap:9px;padding:14px 22px;transition:transform .2s,box-shadow .2s}.button:hover{box-shadow:0 9px 20px #152a3229;transform:translateY(-3px)}.button-primary{background:var(--coral);color:#fff}.button-quiet{background:transparent;color:var(--ink);padding-left:3px}.button-quiet span{color:var(--coral);font-size:22px}.portrait{position:relative}.portrait:before{background:var(--yellow);border-radius:43% 57% 52% 48%;content:'';height:88%;left:7%;position:absolute;top:7%;transform:rotate(-8deg);width:88%}.portrait img{border-radius:50% 50% 43% 43%;display:block;filter:saturate(.86);height:465px;object-fit:cover;position:relative;transform:rotate(3deg);width:86%;z-index:1}.sticker{background:var(--teal);border:7px solid var(--paper);border-radius:50%;bottom:8px;color:#fff;display:grid;font-size:13px;font-weight:700;height:104px;line-height:1.35;padding:15px;place-items:center;position:absolute;right:0;text-align:center;transform:rotate(10deg);width:104px;z-index:2}
-.section{padding:86px 0}.section-head{align-items:end;display:flex;justify-content:space-between;margin-bottom:38px}h2{font-size:clamp(31px,4vw,49px);letter-spacing:-1px;line-height:1.15;margin:10px 0}.section-intro{color:var(--muted);font-size:15px;line-height:1.7;max-width:300px;text-align:right}.about-band{background:var(--teal);color:#fff}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px}.about-grid .eyebrow{color:var(--yellow)}.about-grid p{color:#ffffffc7;font-size:16px;line-height:1.9}.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.fact{border-top:1px solid #ffffff4d;padding-top:16px}.fact strong{display:block;font:700 38px 'DM Sans',sans-serif}.fact span{color:#ffffffb3;font-size:13px}
-.filters{display:flex;flex-wrap:wrap;gap:9px}.filter{background:transparent;border:1px solid var(--line);border-radius:999px;color:var(--muted);cursor:pointer;font-size:13px;padding:9px 16px}.filter.active,.filter:hover{background:var(--ink);border-color:var(--ink);color:#fff}.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.project{background:var(--white);border:1px solid var(--line);border-radius:7px;overflow:hidden;transition:transform .2s,box-shadow .2s}.project:hover{box-shadow:var(--shadow);transform:translateY(-6px)}.project.is-hidden{display:none}.project-image{aspect-ratio:1.42;overflow:hidden}.project-image img{display:block;height:100%;object-fit:cover;transition:transform .4s;width:100%}.project:hover img{transform:scale(1.05)}.project-body{padding:21px 22px 24px}.tag{color:var(--coral);font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase}.project h3{font-size:20px;margin:8px 0}.project p{color:var(--muted);font-size:13px;line-height:1.7;margin:0}
-.journey{background:#e7efea}.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:0}.milestone{border-left:1px solid #aac3b8;min-height:190px;padding:0 25px;position:relative}.milestone:before{background:var(--coral);border:4px solid #e7efea;border-radius:50%;content:'';height:13px;left:-10px;position:absolute;top:-2px;width:13px}.milestone time{color:var(--coral);font:700 15px 'DM Sans',sans-serif}.milestone h3{font-size:19px;margin:12px 0 8px}.milestone p{color:var(--muted);font-size:14px;line-height:1.7;margin:0}.contact{align-items:center;background:var(--yellow);display:flex;justify-content:space-between;padding:56px 0}.contact h2{font-size:clamp(28px,4vw,43px);max-width:620px}.footer{background:var(--ink);color:#ffffffa6;font-size:12px;padding:24px 0}.footer .wrap{align-items:center;display:flex;justify-content:space-between}.footer strong{color:#fff;font-family:'DM Sans',sans-serif}
-@media(max-width:760px){.wrap{width:min(100% - 28px,560px)}.nav{padding:17px 0}.nav-links a:not(.nav-cta){display:none}.nav-links{gap:0}.hero{display:flex;flex-direction:column-reverse;gap:38px;min-height:auto;padding:42px 0 68px}.portrait img{height:330px;width:88%}.sticker{height:84px;font-size:11px;width:84px}h1{letter-spacing:-1.5px}.hero-copy{font-size:15px}.section{padding:62px 0}.section-head{align-items:start;display:block}.section-intro{margin-top:15px;text-align:left}.about-grid,.timeline{display:block}.facts{margin-top:38px}.milestone{margin-left:7px;min-height:145px;padding-bottom:30px}.project-grid{grid-template-columns:1fr}.contact{display:block;padding:42px 0}.contact .button{margin-top:22px}.footer .wrap{align-items:start;flex-direction:column;gap:8px}}
-</style></head>
-<body><header class="wrap nav"><a class="brand" href="#top"><span class="brand-mark">J</span> JINNIE</a><nav class="nav-links" aria-label="เมนูหลัก"><a href="#about">เกี่ยวกับฉัน</a><a href="#work">ผลงาน</a><a href="#journey">เส้นทางการเรียนรู้</a><a class="nav-cta" href="#contact">พูดคุยกัน</a></nav></header>
-<main id="top"><section class="wrap hero"><div><div class="eyebrow">นักเรียนสายสร้างสรรค์ผลงาน · portfolio 2024</div><h1>สวัสดี เราคือ<br><em>พิมพ์ชนก</em> 🌼</h1><p class="hero-copy">นักเรียนชั้นมัธยมปลายที่สนุกกับการเรียนรู้ผ่านการลงมือทำ สนใจงานออกแบบ เทคโนโลยี และเรื่องเล็ก ๆ ที่ทำให้โลกน่าอยู่ขึ้น</p><div class="hero-actions"><a class="button button-primary" href="#work">ชมผลงานของฉัน <span>↗</span></a><a class="button button-quiet" href="#about">รู้จักกันมากขึ้น <span>↓</span></a></div></div><div class="portrait"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=760&q=85" alt="ภาพโปรไฟล์ของพิมพ์ชนก"><div class="sticker">KEEP<br>MAKING<br>THINGS</div></div></section>
-<section class="about-band section" id="about"><div class="wrap about-grid"><div><div class="eyebrow">A little about me</div><h2>ทุกความสงสัย<br>คือจุดเริ่มต้น</h2></div><div><p>เราเชื่อว่าผลงานที่ดีไม่ได้เกิดจากการทำให้สมบูรณ์แบบตั้งแต่ครั้งแรก แต่เกิดจากการกล้าลอง ตั้งคำถาม และค่อย ๆ เรียนรู้ระหว่างทาง</p><div class="facts"><div class="fact"><strong>14</strong><span>โปรเจกต์ที่ได้ลองทำ</span></div><div class="fact"><strong>03</strong><span>รางวัลและกิจกรรม</span></div><div class="fact"><strong>05</strong><span>ทักษะที่กำลังฝึกฝน</span></div><div class="fact"><strong>∞</strong><span>สิ่งใหม่ที่อยากเรียนรู้</span></div></div></div></div></section>
-<section class="wrap section" id="work"><div class="section-head"><div><div class="eyebrow">Selected work</div><h2>ผลงานที่ภูมิใจ</h2></div><p class="section-intro">รวมชิ้นงานจากห้องเรียน งานอดิเรก และความอยากรู้อยากลอง</p></div><div class="filters" aria-label="กรองผลงาน"><button class="filter active" data-filter="all">ทั้งหมด</button><button class="filter" data-filter="design">ออกแบบ</button><button class="filter" data-filter="code">โค้ดดิ้ง</button><button class="filter" data-filter="activity">กิจกรรม</button></div><div class="project-grid" style="margin-top:24px"><article class="project" data-category="design"><div class="project-image"><img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=700&q=85" alt="ตัวอย่างงานออกแบบโปสเตอร์" loading="lazy"></div><div class="project-body"><span class="tag">Design · 2024</span><h3>โปสเตอร์รักษ์โลก</h3><p>ชุดโปสเตอร์รณรงค์ลดการใช้พลาสติกในโรงเรียน ผ่านภาพประกอบสีสดใส</p></div></article><article class="project" data-category="code"><div class="project-image"><img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=700&q=85" alt="หน้าจอแอปพลิเคชันที่กำลังออกแบบ" loading="lazy"></div><div class="project-body"><span class="tag">Code · 2024</span><h3>Study Buddy</h3><p>เว็บแอปช่วยจัดตารางอ่านหนังสือ โปรเจกต์แรกที่ได้ใช้ HTML, CSS และ JavaScript</p></div></article><article class="project" data-category="activity"><div class="project-image"><img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=700&q=85" alt="กลุ่มนักเรียนทำกิจกรรมร่วมกัน" loading="lazy"></div><div class="project-body"><span class="tag">Activity · 2023</span><h3>ค่ายเพื่อน้อง</h3><p>ออกแบบฐานกิจกรรมวิทยาศาสตร์แสนสนุกให้กับน้อง ๆ ในชุมชน</p></div></article></div></section>
-<section class="journey section" id="journey"><div class="wrap"><div class="section-head"><div><div class="eyebrow">My learning journey</div><h2>เติบโตไปทีละก้าว</h2></div></div><div class="timeline"><div class="milestone"><time>2022</time><h3>เริ่มต้นจากความสงสัย</h3><p>ลองเรียนออกแบบด้วยตัวเอง และค้นพบว่าการเล่าเรื่องผ่านภาพนั้นสนุกมาก</p></div><div class="milestone"><time>2023</time><h3>กล้าทำงานเป็นทีม</h3><p>เข้าร่วมชมรมและกิจกรรมอาสา ได้เรียนรู้การฟังและการเติบโตไปพร้อมกับคนอื่น</p></div><div class="milestone"><time>2024</time><h3>สร้างสิ่งที่มีความหมาย</h3><p>เริ่มสนใจเทคโนโลยีเพื่อสังคม และอยากสร้างผลงานที่ช่วยแก้ปัญหาใกล้ตัว</p></div></div></div></section>
-<section class="contact" id="contact"><div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:24px"><h2>มีไอเดียอยากชวน<br>มาทำด้วยกันไหม?</h2><a class="button button-primary" href="mailto:hello@jinnie.portfolio">ส่งข้อความหาเรา <span>↗</span></a></div></section></main><footer class="footer"><div class="wrap"><strong>JINNIE / 2024</strong><span>สร้างด้วยความอยากรู้และกาแฟหนึ่งแก้ว</span><span>© พิมพ์ชนก วัฒนศิลป์</span></div></footer>
-<script>const filters=document.querySelectorAll('.filter'),projects=document.querySelectorAll('.project');filters.forEach(filter=>{filter.addEventListener('click',()=>{filters.forEach(item=>item.classList.remove('active'));filter.classList.add('active');const selected=filter.dataset.filter;projects.forEach(project=>project.classList.toggle('is-hidden',selected!=='all'&&project.dataset.category!==selected))})});</script></body></html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="แฟ้มสะสมผลงานของจิณณวัตร นักเรียนผู้ชอบเปลี่ยนไอเดียให้เป็นผลงานที่มีความหมาย"
+    />
+    <title>JINNIE / แฟ้มสะสมผลงาน</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #152a32;
+        --muted: #65767a;
+        --paper: #f8f4eb;
+        --white: #fffdf8;
+        --coral: #e9674f;
+        --teal: #157b78;
+        --yellow: #f2c75b;
+        --line: #d9e1da;
+        --shadow: 0 18px 55px #152a321f;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--paper);
+        font-family: "Noto Sans Thai", sans-serif;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      button {
+        font: inherit;
+      }
+      .wrap {
+        width: min(1120px, calc(100% - 40px));
+        margin: auto;
+      }
+      .nav {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 23px 0;
+      }
+      .brand {
+        align-items: center;
+        display: flex;
+        gap: 10px;
+        font:
+          700 21px "DM Sans",
+          sans-serif;
+        letter-spacing: 0.5px;
+      }
+      .brand-mark {
+        background: var(--coral);
+        border-radius: 50%;
+        display: grid;
+        height: 30px;
+        place-items: center;
+        width: 30px;
+        color: #fff;
+      }
+      .nav-links {
+        align-items: center;
+        display: flex;
+        gap: 31px;
+        font-size: 14px;
+      }
+      .nav-links a {
+        color: var(--muted);
+        font-weight: 600;
+      }
+      .nav-links a:hover {
+        color: var(--coral);
+      }
+      .nav-cta {
+        background: var(--ink);
+        border-radius: 999px;
+        color: #fff !important;
+        padding: 10px 18px;
+      }
+      .hero {
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 65px;
+        align-items: center;
+        min-height: 610px;
+        padding: 45px 0 78px;
+      }
+      .eyebrow {
+        align-items: center;
+        color: var(--teal);
+        display: flex;
+        font-size: 13px;
+        font-weight: 800;
+        gap: 10px;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+      }
+      .eyebrow:before {
+        background: var(--coral);
+        content: "";
+        height: 8px;
+        transform: rotate(45deg);
+        width: 8px;
+      }
+      h1 {
+        font-size: clamp(42px, 6vw, 78px);
+        letter-spacing: -2px;
+        line-height: 1.05;
+        margin: 20px 0;
+      }
+      h1 em {
+        color: var(--coral);
+        font-style: normal;
+      }
+      .hero-copy {
+        color: var(--muted);
+        font-size: 17px;
+        line-height: 1.85;
+        max-width: 490px;
+      }
+      .hero-actions {
+        align-items: center;
+        display: flex;
+        gap: 18px;
+        margin-top: 30px;
+      }
+      .button {
+        align-items: center;
+        border: 0;
+        border-radius: 999px;
+        cursor: pointer;
+        display: inline-flex;
+        font-weight: 700;
+        gap: 9px;
+        padding: 14px 22px;
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+      }
+      .button:hover {
+        box-shadow: 0 9px 20px #152a3229;
+        transform: translateY(-3px);
+      }
+      .button-primary {
+        background: var(--coral);
+        color: #fff;
+      }
+      .button-quiet {
+        background: transparent;
+        color: var(--ink);
+        padding-left: 3px;
+      }
+      .button-quiet span {
+        color: var(--coral);
+        font-size: 22px;
+      }
+      .portrait {
+        position: relative;
+      }
+      .portrait:before {
+        background: var(--yellow);
+        border-radius: 43% 57% 52% 48%;
+        content: "";
+        height: 88%;
+        left: 7%;
+        position: absolute;
+        top: 7%;
+        transform: rotate(-8deg);
+        width: 88%;
+      }
+      .portrait img {
+        border-radius: 50% 50% 43% 43%;
+        display: block;
+        filter: saturate(0.86);
+        height: 465px;
+        object-fit: cover;
+        position: relative;
+        transform: rotate(3deg);
+        width: 86%;
+        z-index: 1;
+      }
+      .sticker {
+        background: var(--teal);
+        border: 7px solid var(--paper);
+        border-radius: 50%;
+        bottom: 8px;
+        color: #fff;
+        display: grid;
+        font-size: 13px;
+        font-weight: 700;
+        height: 104px;
+        line-height: 1.35;
+        padding: 15px;
+        place-items: center;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        transform: rotate(10deg);
+        width: 104px;
+        z-index: 2;
+      }
+      .section {
+        padding: 86px 0;
+      }
+      .section-head {
+        align-items: end;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 38px;
+      }
+      h2 {
+        font-size: clamp(31px, 4vw, 49px);
+        letter-spacing: -1px;
+        line-height: 1.15;
+        margin: 10px 0;
+      }
+      .section-intro {
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.7;
+        max-width: 300px;
+        text-align: right;
+      }
+      .about-band {
+        background: var(--teal);
+        color: #fff;
+      }
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+      }
+      .about-grid .eyebrow {
+        color: var(--yellow);
+      }
+      .about-grid p {
+        color: #ffffffc7;
+        font-size: 16px;
+        line-height: 1.9;
+      }
+      .facts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+      .fact {
+        border-top: 1px solid #ffffff4d;
+        padding-top: 16px;
+      }
+      .fact strong {
+        display: block;
+        font:
+          700 38px "DM Sans",
+          sans-serif;
+      }
+      .fact span {
+        color: #ffffffb3;
+        font-size: 13px;
+      }
+      .filters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+      }
+      .filter {
+        background: transparent;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        color: var(--muted);
+        cursor: pointer;
+        font-size: 13px;
+        padding: 9px 16px;
+      }
+      .filter.active,
+      .filter:hover {
+        background: var(--ink);
+        border-color: var(--ink);
+        color: #fff;
+      }
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+      }
+      .project {
+        background: var(--white);
+        border: 1px solid var(--line);
+        border-radius: 7px;
+        overflow: hidden;
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+      }
+      .project:hover {
+        box-shadow: var(--shadow);
+        transform: translateY(-6px);
+      }
+      .project.is-hidden {
+        display: none;
+      }
+      .project-image {
+        aspect-ratio: 1.42;
+        overflow: hidden;
+      }
+      .project-image img {
+        display: block;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s;
+        width: 100%;
+      }
+      .project:hover img {
+        transform: scale(1.05);
+      }
+      .project-body {
+        padding: 21px 22px 24px;
+      }
+      .tag {
+        color: var(--coral);
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      .project h3 {
+        font-size: 20px;
+        margin: 8px 0;
+      }
+      .project p {
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.7;
+        margin: 0;
+      }
+      .journey {
+        background: #e7efea;
+      }
+      .timeline {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+      }
+      .milestone {
+        border-left: 1px solid #aac3b8;
+        min-height: 190px;
+        padding: 0 25px;
+        position: relative;
+      }
+      .milestone:before {
+        background: var(--coral);
+        border: 4px solid #e7efea;
+        border-radius: 50%;
+        content: "";
+        height: 13px;
+        left: -10px;
+        position: absolute;
+        top: -2px;
+        width: 13px;
+      }
+      .milestone time {
+        color: var(--coral);
+        font:
+          700 15px "DM Sans",
+          sans-serif;
+      }
+      .milestone h3 {
+        font-size: 19px;
+        margin: 12px 0 8px;
+      }
+      .milestone p {
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.7;
+        margin: 0;
+      }
+      .contact {
+        align-items: center;
+        background: var(--yellow);
+        display: flex;
+        justify-content: space-between;
+        padding: 56px 0;
+      }
+      .contact h2 {
+        font-size: clamp(28px, 4vw, 43px);
+        max-width: 620px;
+      }
+      .footer {
+        background: var(--ink);
+        color: #ffffffa6;
+        font-size: 12px;
+        padding: 24px 0;
+      }
+      .footer .wrap {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+      .footer strong {
+        color: #fff;
+        font-family: "DM Sans", sans-serif;
+      }
+      @media (max-width: 760px) {
+        .wrap {
+          width: min(100% - 28px, 560px);
+        }
+        .nav {
+          padding: 17px 0;
+        }
+        .nav-links a:not(.nav-cta) {
+          display: none;
+        }
+        .nav-links {
+          gap: 0;
+        }
+        .hero {
+          display: flex;
+          flex-direction: column-reverse;
+          gap: 38px;
+          min-height: auto;
+          padding: 42px 0 68px;
+        }
+        .portrait img {
+          height: 330px;
+          width: 88%;
+        }
+        .sticker {
+          height: 84px;
+          font-size: 11px;
+          width: 84px;
+        }
+        h1 {
+          letter-spacing: -1.5px;
+        }
+        .hero-copy {
+          font-size: 15px;
+        }
+        .section {
+          padding: 62px 0;
+        }
+        .section-head {
+          align-items: start;
+          display: block;
+        }
+        .section-intro {
+          margin-top: 15px;
+          text-align: left;
+        }
+        .about-grid,
+        .timeline {
+          display: block;
+        }
+        .facts {
+          margin-top: 38px;
+        }
+        .milestone {
+          margin-left: 7px;
+          min-height: 145px;
+          padding-bottom: 30px;
+        }
+        .project-grid {
+          grid-template-columns: 1fr;
+        }
+        .contact {
+          display: block;
+          padding: 42px 0;
+        }
+        .contact .button {
+          margin-top: 22px;
+        }
+        .footer .wrap {
+          align-items: start;
+          flex-direction: column;
+          gap: 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="wrap nav">
+      <a class="brand" href="#top"><span class="brand-mark">J</span> JINNIE</a>
+      <nav class="nav-links" aria-label="เมนูหลัก">
+        <a href="#about">เกี่ยวกับฉัน</a><a href="#work">ผลงาน</a
+        ><a href="#journey">เส้นทางการเรียนรู้</a
+        ><a class="nav-cta" href="#contact">พูดคุยกัน</a>
+      </nav>
+    </header>
+    <main id="top">
+      <section class="wrap hero">
+        <div>
+          <div class="eyebrow">นักเรียนสายสร้างสรรค์ผลงาน · portfolio 2024</div>
+          <h1>สวัสดี เราคือ<br /><em>จิณณวัตร</em> 🌼</h1>
+          <p class="hero-copy">
+            นักเรียนชั้นมัธยมปลายที่สนุกกับการเรียนรู้ผ่านการลงมือทำ
+            สนใจงานออกแบบ เทคโนโลยี และเรื่องเล็ก ๆ ที่ทำให้โลกน่าอยู่ขึ้น
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work"
+              >ชมผลงานของฉัน <span>↗</span></a
+            ><a class="button button-quiet" href="#about"
+              >รู้จักกันมากขึ้น <span>↓</span></a
+            >
+          </div>
+        </div>
+        <div class="portrait">
+          <img src="img/S__17866760.jpg" alt="ภาพโปรไฟล์ของจิณณวัตร" />
+          <div class="sticker">KEEP<br />MAKING<br />THINGS</div>
+        </div>
+      </section>
+      <section class="about-band section" id="about">
+        <div class="wrap about-grid">
+          <div>
+            <div class="eyebrow">A little about me</div>
+            <h2>ทุกความสงสัย<br />คือจุดเริ่มต้น</h2>
+          </div>
+          <div>
+            <p>
+              เราเชื่อว่าผลงานที่ดีไม่ได้เกิดจากการทำให้สมบูรณ์แบบตั้งแต่ครั้งแรก
+              แต่เกิดจากการกล้าลอง ตั้งคำถาม และค่อย ๆ เรียนรู้ระหว่างทาง
+            </p>
+            <div class="facts">
+              <div class="fact">
+                <strong>14</strong><span>โปรเจกต์ที่ได้ลองทำ</span>
+              </div>
+              <div class="fact">
+                <strong>03</strong><span>รางวัลและกิจกรรม</span>
+              </div>
+              <div class="fact">
+                <strong>05</strong><span>ทักษะที่กำลังฝึกฝน</span>
+              </div>
+              <div class="fact">
+                <strong>∞</strong><span>สิ่งใหม่ที่อยากเรียนรู้</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="wrap section" id="work">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Selected work</div>
+            <h2>ผลงานที่ภูมิใจ</h2>
+          </div>
+          <p class="section-intro">
+            รวมชิ้นงานจากห้องเรียน งานอดิเรก และความอยากรู้อยากลอง
+          </p>
+        </div>
+        <div class="filters" aria-label="กรองผลงาน">
+          <button class="filter active" data-filter="all">ทั้งหมด</button
+          ><button class="filter" data-filter="design">ออกแบบ</button
+          ><button class="filter" data-filter="code">โค้ดดิ้ง</button
+          ><button class="filter" data-filter="activity">กิจกรรม</button>
+        </div>
+        <div class="project-grid" style="margin-top: 24px">
+          <article class="project" data-category="design">
+            <div class="project-image">
+              <img
+                src="img/S__17866756.jpg"
+                alt="ตัวอย่างงานออกแบบโปสเตอร์"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-body">
+              <span class="tag">Design · 2024</span>
+              <h3>โปสเตอร์โครงงาน</h3>
+              <p>
+                ชุดโปสเตอร์โครงงานถ่านชีวภาพจากผักตบชวาเพื่อการบำบัดน้ำเสีย
+              </p>
+            </div>
+          </article>
+          <article class="project" data-category="code">
+            <div class="project-image">
+              <img
+                src="img/S__17866755.jpg"
+                alt="หน้าจอแอปพลิเคชันที่กำลังออกแบบ"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-body">
+              <span class="tag">Code · 2024</span>
+              <h3>โครงงาน</h3>
+              <p>
+                โครงงานถ่านชีวภาพจากผักตบชวาเพื่อการบำบัดน้ำเสีย
+              </p>
+            </div>
+          </article>
+          <article class="project" data-category="activity">
+            <div class="project-image">
+              <img
+                src="img/S__17866758.jpg"
+                alt="กลุ่มนักเรียนทำกิจกรรมร่วมกัน"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-body">
+              <span class="tag">Activity · 2023</span>
+              <h3>ค่ายพื่สอนน้อง</h3>
+              <p>ออกแบบฐานกิจกรรมวิทยาศาสตร์แสนสนุกให้กับน้อง ๆ ในชุมชน</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="journey section" id="journey">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow">My learning journey</div>
+              <h2>เติบโตไปทีละก้าว</h2>
+            </div>
+          </div>
+          <div class="timeline">
+            <div class="milestone">
+              <time>2022</time>
+              <h3>เริ่มต้นจากความสงสัย</h3>
+              <p>
+                ลองเรียนออกแบบด้วยตัวเอง
+                และค้นพบว่าการเล่าเรื่องผ่านภาพนั้นสนุกมาก
+              </p>
+            </div>
+            <div class="milestone">
+              <time>2023</time>
+              <h3>กล้าทำงานเป็นทีม</h3>
+              <p>
+                เข้าร่วมชมรมและกิจกรรมอาสา
+                ได้เรียนรู้การฟังและการเติบโตไปพร้อมกับคนอื่น
+              </p>
+            </div>
+            <div class="milestone">
+              <time>2024</time>
+              <h3>สร้างสิ่งที่มีความหมาย</h3>
+              <p>
+                เริ่มสนใจเทคโนโลยีเพื่อสังคม
+                และอยากสร้างผลงานที่ช่วยแก้ปัญหาใกล้ตัว
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div
+          class="wrap"
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+          "
+        >
+          <h2>มีไอเดียอยากชวน<br />มาทำด้วยกันไหม?</h2>
+          <a class="button button-primary" href="mailto:hello@jinnie.portfolio"
+            >ส่งข้อความหาเรา <span>↗</span></a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrap">
+        <strong>JINNIE / 2024</strong
+        ><span>สร้างด้วยความอยากรู้และกาแฟหนึ่งแก้ว</span
+        ><span>© จิณณวัตร ใจปินตา</span>
+      </div>
+    </footer>
+    <script>
+      const filters = document.querySelectorAll(".filter"),
+        projects = document.querySelectorAll(".project");
+      filters.forEach((filter) => {
+        filter.addEventListener("click", () => {
+          filters.forEach((item) => item.classList.remove("active"));
+          filter.classList.add("active");
+          const selected = filter.dataset.filter;
+          projects.forEach((project) =>
+            project.classList.toggle(
+              "is-hidden",
+              selected !== "all" && project.dataset.category !== selected,
+            ),
+          );
+        });
+      });
+    </script>
+  </body>
+</html>
